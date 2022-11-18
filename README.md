@@ -22,4 +22,3 @@ Basic SQL project on an online retail shopping app's database for data querying 
 •	Deliver To (addrid, orderNumber, TimeDelivered) (addrid ref Address, orderNumber ref Order)
 •	Payment (C.cardNumber, orderNumber, payTime) (C.cardNumber ref Credit Card, orderNumber ref Order)
 **Create Database**
-
