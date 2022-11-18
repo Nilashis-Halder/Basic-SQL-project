@@ -4,7 +4,7 @@ Basic SQL project on an online retail shopping app's database for data querying 
 **ER Diagram**
 
 **Entities**
-User (userId, name, phoneNum)
+*User (userId, name, phoneNum)
 Buyer (userId)
 Seller (userId)
 Bank Card (cardNumber, userId, bank, expiryDate)
