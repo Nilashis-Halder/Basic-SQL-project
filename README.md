@@ -1,5 +1,7 @@
-# SQL-project- (In progress)
-Basic SQL project on an online retail shopping app's database for data querying &amp; modifying in MS SQL server
+# SQL-project (In progress)
+In this SQL project we have created a <b>MS SQL Server database</b> with using dummy real world dataset generated from [generatedata.com](https://generatedata.com/) <span>&#8594;</span> Defined database structure and modified data using T-SQL queries to maintain data uniformity in database <span>&#8594;</span> Used medium-complex DQL queries to answer & visualize data-driven insights from data available in this normalized database using different types of JOINs, Aggregations, CTEs, Sub-Queries as per requirement.
+
+<I> Below we have given a brief description of the database architecture and also screenshots are given for for queries and results of various insights retrieved from the database in different complex requirement scenarios </I>
 
 **ER Diagram**
  
@@ -27,7 +29,7 @@ Basic SQL project on an online retail shopping app's database for data querying 
 
 
 **Create Database**
-* [Table.sql](https://github.com/Nilashis-Halder/Online-Retail-App-SQL-project/blob/main/Table%20creation.sql): Create tables for entities and relationships above.
-* [Insert.sql](https://github.com/Nilashis-Halder/Online-Retail-App-SQL-project/blob/main/Insert%20data.sql): Insert datas into tables.
+* [Table creation.sql](https://github.com/Nilashis-Halder/Online-Retail-App-SQL-project/blob/main/Table%20creation.sql): Create tables for entities and relationships above.
+* [Insert data.sql](https://github.com/Nilashis-Halder/Online-Retail-App-SQL-project/blob/main/Insert%20data.sql): Insert datas into tables.
 * [Modification.sql](): Modify the data.
 
