@@ -5,41 +5,29 @@ Basic SQL project on an online retail shopping app's database for data querying 
  
 **Entities**
 
-•	User (userId, name, phoneNum)
-
-•	Buyer (userId)
-
-•	Seller (userId)
-
-•	Bank Card (cardNumber, userId, bank, expiryDate)
-
-•	Credit Card (cardNumber, organization)
-
-•	Debit Card (cardNumber)
-
-•	Store (sid, name, startTime, customerGrade, streetAddr, city, province)
-
-•	Product (pid, sid, name, brand, type, amount, price, colour, customerReview, modelNumber)
-
-•	Order Item (itemid, pid, price, creationTime)
-
-•	Order (orderNumber, creationTime, paymentStatus, totalAmount)
-
-•	Address (addrid, userid, name, city, postalCode, streetAddr, province, contactPhoneNumber)
-
+* User (__userId__, name, phoneNum)
+* Buyer (__userId__)
+* Seller (__userId__)
+* Bank Card (__cardNumber__, userId, bank, expiryDate)
+* Credit Card (__cardNumber__, organization)
+* Debit Card (__cardNumber__)
+* Store (__sid__, name, startTime, customerGrade, streetAddr, city, province)
+* Product (__pid__, sid, name, brand, type, amount, price, colour, customerReview, modelNumber)
+* Order Item (__itemid__, pid, price, creationTime)
+* Order (__orderNumber__, creationTime, paymentStatus, totalAmount)
+* Address (__addrid__, userid, name, city, postalCode, streetAddr, province, contactPhoneNumber)
 
 **Relationships**
 
-•	Manage (userid, sid, SetupTime) (userid ref Seller, sid ref Store)
-
-•	Save to Shopping Cart (userid, pid, quantity, addtime) (userid ref Buyer, pid ref Product)
-
-•	Contain (orderNumber, itemid, quantity) (orderNumber ref Order, itemid ref Order Item)
-
-•	Deliver To (addrid, orderNumber, TimeDelivered) (addrid ref Address, orderNumber ref Order)
-
-•	Payment (C.cardNumber, orderNumber, payTime) (C.cardNumber ref Credit Card, orderNumber ref Order)
+* Manage (__userid__, __sid__, SetupTime) (userid ref Seller, sid ref Store)
+* Save to Shopping Cart (__userid__, __pid__, quantity, addtime) (userid ref Buyer, pid ref Product)
+* Contain (__orderNumber__, __itemid__, quantity) (orderNumber ref Order, itemid ref Order Item)
+* Deliver To (__addrid__, __orderNumber__, TimeDelivered) (addrid ref Address, orderNumber ref Order)
+* Payment (__C.cardNumber__, __orderNumber__, payTime) (C.cardNumber ref Credit Card, orderNumber ref Order)
 
 
 **Create Database**
+* [Table.sql](https://github.com/Nilashis-Halder/Online-Retail-App-SQL-project/blob/main/Table%20creation.sql): Create tables for entities and relationships above.
+* [Insert.sql](https://github.com/Nilashis-Halder/Online-Retail-App-SQL-project/blob/main/Insert%20data.sql): Insert datas into tables.
+* [Modification.sql](): Modify the data.
 
